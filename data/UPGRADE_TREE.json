@@ -1,0 +1,38 @@
+[
+    {
+        "locked":false,
+        "purchased":false,
+        "cost":10,
+        "title":"Holy Water",
+        "code":1,
+        "value":1,
+        "next":["Water Gun Baptism", "Peace Be With You"]
+    },
+    {
+        "locked":false,
+        "purchased":false,
+        "cost":100,
+        "title":"Water Gun Baptism",
+        "code":2,
+        "value":0.1,
+        "next":["Drive By Baptism", "Door To Door Bible Salesman"]
+    },
+    {
+        "locked":false,
+        "purchased":false,
+        "cost":1000,
+        "title":"Peace Be With You",
+        "code":3,
+        "value":0.1,
+        "next":["Better Crackers", "Judgemental Stare"]
+    },
+    {
+        "locked":false,
+        "purchased":false,
+        "cost":10000,
+        "title":"Drive By Baptism",
+        "code":2,
+        "value":0.1,
+        "next":["Instagram Page", "Bake Sale"]
+    }
+]

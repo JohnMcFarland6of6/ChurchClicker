@@ -1,0 +1,62 @@
+[
+    {    
+        "Population": 
+        {
+            "name":"Canada",
+            "population":100000000,
+            "tierPercentages": [0.8, 0.1, 0.1]
+        },
+        "Religion":
+        {
+            "pressureMultipliers": [0.4,0.8,2.0],
+            "resistanceMultipliers": [1,1,1],
+            "tierBonusMultipliers": [1,1,1]
+        },
+        "Economy":
+        {
+            "weekdayTithe":[5,5,5],
+            "sundayTithe":[10,10,10]
+        }
+    },
+
+    {
+        "Population": 
+        {
+            "name":"Central Europe",
+            "population":100000000,
+            "tierPercentages": [0.2, 0.3, 0.50]
+        },
+        "Religion": 
+        {
+            "pressureMultipliers": [0.01,1,1],
+            "resistanceMultipliers": [1,1,1],
+            "tierBonusMultipliers": [1,1,1]
+        },
+        "Economy": 
+        {
+            "weekdayTithe":[0,10,20],
+            "sundayTithe":[5,10,1000]
+        }
+    },
+    
+    {
+        "Population":
+        {
+            "name": "USA",
+            "population":100000000,
+            "tierPercentages": [0.5, 0.25, 0.25]
+        },
+        "Religion":
+        {
+            "pressureMultipliers": [0.2,0.8,2.0],
+            "resistanceMultipliers": [0.9,0.5,0.01],
+            "tierBonusMultipliers": [0.01, 0.2, 1, 2, 5]
+        },
+        "Economy":
+        {
+            "weekdayTithe":[0,2,10],
+            "sundayTithe":[5,20,100]
+        }
+    }
+    
+]
