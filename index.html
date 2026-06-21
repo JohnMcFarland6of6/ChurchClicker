@@ -3,12 +3,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./static/css/style.css">
+    <link rel="stylesheet" href="./static/css/css_file_links.css">
+
+    <script type="importmap">
+    {
+        "imports": {
+            "three": "https://cdn.jsdelivr.net/npm/three@0.158.0/build/three.module.js"
+        }
+    }
+    </script>
+
     <script type="module" src="./js/main.js" defer></script>
+    
     <title>Church Clicker</title>
 </head>
 <body>
     <ul id="nav_bar">
-        <li><h3>Church Clicker</h3></li>
+        <li><h3 id="logo">Church Clicker</h3></li>
         
 
     </ul>
@@ -32,10 +43,7 @@
         </div>
     </div>
     <div id="right_side">
-        <main>
-            <div id="worldMap"></div>
-        </main>
-        <script type="module" src="/js/worldmap.js"></script>
+        <canvas id="fractals"></canvas>
     </div>
 </body>
 </html>

@@ -4,7 +4,9 @@ import { Religion } from "./Religion.js";
 import { Country, Population } from "./Population.js";
 import { getUpgradeTree, getSaveData, getWorldObjects } from "./JSONLoader.js";
 import { Clicker } from "./Clicker.js";
+import { updateMap, updateRaycaster } from "./worldmap.js";
 
+////======================= Tick Variables ====================
 const MAX_FPS = 30;
 const FRAME_INTERVAL = 1000/MAX_FPS;
 let previousTime;
@@ -24,6 +26,8 @@ let convertLength = 5000;
 let clicker = new Clicker();
 holdButton(convertButton, clicker.clickTime, convertButtonPressed);
 
+
+//===========Testing===========================
 let world = await getWorldObjects();
 //console.log(world);
 
@@ -34,6 +38,7 @@ function main()
     requestAnimationFrame(update);
 }
 
+//================ Update ======================
 function update(currentTime)
 {
     
@@ -52,6 +57,9 @@ function update(currentTime)
         convertCount.textContent = "Population: "+Math.round(world[2].population.convertedPopulation[0]);
     }
     //update animations
+    updateRaycaster();
+    updateMap();
+
     requestAnimationFrame(update);
 }
 
@@ -82,15 +90,17 @@ function holdButton(btn, duration, func)
         btn.classList.remove('animating');
     });   
 }
-mapButton.addEventListener('mousedown', () => 
-    {   
-        clicker.updateBase(2);
-    });
+
 function convertButtonPressed()
 {
     world[2].population.convertedPopulation[0]+= clicker.clickPower(); 
-    //convertCount.textContent = "Population: "+NAcountry.population.convertedPopulation[0];
-    
+    //convertCount.textContent = "Population: "+NAcountry.population.convertedPopulation[0];    
 }
+
+mapButton.addEventListener('mousedown', () => 
+{   
+    clicker.updateBase(2);
+});
+
 
 main();

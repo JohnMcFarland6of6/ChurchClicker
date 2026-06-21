@@ -1,0 +1,13 @@
+h3 {
+    font-size: small;
+}
+#nav_bar h3 {
+    font-size: large;
+    margin-bottom: 0%;
+}
+
+#sub_nav_bar button {
+    height: 100%;
+    aspect-ratio: 3/2;
+    font-size: small;
+}
